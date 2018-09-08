@@ -1,0 +1,45 @@
+
+/*color scheme
+yellow?!: #feda6a
+Silver: #d4d4dc
+Deep Matte Grey: #393f4d
+Dark Slate: #1d1e22 */
+
+/* look for the whole page */
+#body {
+  background-color: #1d1e22;
+  color: #feda6a;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+#taskList {
+  padding: 70px;
+
+}
+
+#taskInput {
+  background-color: #1d1e22;
+  color: #feda6a;
+  font-family: monospace;
+  font-size: 15px;
+  border-style: none;
+}
+
+#taskUL {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.taskLI {
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.taskLI.checked {
+  text-decoration: line-through;
+}
