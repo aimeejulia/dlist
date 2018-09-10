@@ -1,4 +1,3 @@
-
 /*color scheme
 yellow?!: #feda6a
 Silver: #d4d4dc
@@ -24,22 +23,36 @@ Dark Slate: #1d1e22 */
   font-family: monospace;
   font-size: 15px;
   border-style: none;
+  width: 75%;
 }
 
 #taskUL {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .taskLI {
   /* make the list items unselectable */
   -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .taskLI.checked {
   text-decoration: line-through;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
 }
