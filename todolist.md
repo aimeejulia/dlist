@@ -7,3 +7,5 @@ to do list:
 #add minus icon for delete near added task list item
 
 #add css yellow to the current delete button in the list
+
+#fix css to strike through 
