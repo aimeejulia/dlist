@@ -12,6 +12,7 @@ Dark Slate: #1d1e22 */
   color: #feda6a;
   font-family: monospace;
   font-size: 15px;
+  height: 100vh;
 }
 
 #taskList {
@@ -65,4 +66,18 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
+}
+
+/* keeping the footer at the bottom of the page*/
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: underline;
+  background-color: #212529;
 }
