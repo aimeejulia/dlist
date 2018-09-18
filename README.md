@@ -4,11 +4,11 @@ I would like to build a simple open source to do list web app that anyone can us
 
 ## User story for 1st release
 
-user should be able to creat a to do list, 
-+ user can add tasks, 
-+ edit existing task, 
+As a user I should be able to create a to do list, 
++ add tasks, 
++ edit existing tasks, 
 + mark tasks as complete  
-+ delete tasks
++ and delete tasks
 
 -----------------
 
