@@ -2,7 +2,7 @@
 
 ## Attribution 4.0 International (CC BY 4.0)
 
-This is a human-readable summary of (and not a substitute for) [the licence](https://creativecommons.org/licenses/by/4.0/legalcode)the license. Disclaimer.
+This is a human-readable summary of (and not a substitute for) [the licence](https://creativecommons.org/licenses/by/4.0/legalcode). Disclaimer.
 
 ## You are free to:
 
