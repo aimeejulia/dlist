@@ -23,9 +23,15 @@ list.addEventListener('click', function(ev) {
 // Create a new list item when clicking on the "Add" button or pressing the return key
 function newElement() {
   var li = document.createElement("li");
+  li.className = "list-item";
   var inputValue = document.getElementById("taskInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+  //create a span
+  var span = document.createElement("span");
+  span.className = "delBtn";
+  span.innerHTML = "<i class='fas fa-minus'></i>";
+  li.appendChild(span);
   if (inputValue === '') {
     alert("You must write something!");
   } else {
@@ -33,11 +39,11 @@ function newElement() {
   }
   document.getElementById("taskInput").value = "";
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+  // var span = document.createElement("SPAN");
+  // var txt = document.createTextNode("\u00D7");
+  // span.className = "close";
+  // span.appendChild(txt);
+  // li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
