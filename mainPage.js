@@ -21,7 +21,7 @@ function newElement() {
   document.getElementById("taskInput").value = "";
 
 
-//Delete tasks permanentely from the list on pressing the minue button
+//Delete tasks permanentely from the list on pressing the minus button
 var task = document.querySelector("#taskUL");
 task.addEventListener("click", removeTask);
 function removeTask(e){
