@@ -19,7 +19,7 @@ function newElement() {
     document.getElementById("taskUL").appendChild(li);
   }
   document.getElementById("taskInput").value = "";
-
+};
 
 //Delete tasks permanentely from the list on pressing the minus button
 var task = document.querySelector("#taskUL");
