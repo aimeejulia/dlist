@@ -4,8 +4,6 @@ Silver: #d4d4dc
 Deep Matte Grey: #393f4d
 Dark Slate: #1d1e22 */
 
-
-
 /* look for the whole page */
 #body {
   background-color: #1d1e22;
@@ -35,13 +33,7 @@ Dark Slate: #1d1e22 */
   list-style-type: none;
 }
 
-.taskLI {
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+
 
 .delBtn{
   float: right;
@@ -56,27 +48,6 @@ Dark Slate: #1d1e22 */
   text-decoration: line-through;
 }
 
-/* When clicked on, add a background color and strike out text */
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
-
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-
 /* keeping the footer at the bottom of the page*/
 #footer {
   position:absolute;
@@ -85,8 +56,15 @@ ul li.checked::before {
   height:60px;
 }
 
+/*footer link static - does not change on hover */
 .footerLink {
-  color: white;
+  color: #feda6a;
+  text-decoration: underline;
+  background-color: #212529;
+}
+
+.footerLink:hover {
+  color: #feda6a;
   text-decoration: underline;
   background-color: #212529;
 }
