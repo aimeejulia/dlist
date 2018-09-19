@@ -1,4 +1,25 @@
 
+// // Create a "close" button and append it to each list item
+// var myNodelist = document.getElementsByTagName("LI");
+// var i;
+// for (i = 0; i < myNodelist.length; i++) {
+//   var span = document.createElement("SPAN");
+//   var txt = document.createTextNode("\u00D7");
+//   span.className = "close";
+//   span.appendChild(txt);
+//   myNodelist[i].appendChild(span);
+// }
+
+
+// // Add a "checked" symbol when clicking on a list item
+// var list = document.querySelector('ul');
+// list.addEventListener('click', function(ev) {
+//   if (ev.target.tagName === 'LI') {
+//     ev.target.classList.toggle('completed');
+//   }
+// }, false);
+
+
 // Create a new list item when clicking on the "Add" button or pressing the return key
 function newElement() {
   var li = document.createElement("li");
@@ -6,9 +27,7 @@ function newElement() {
   var inputValue = document.getElementById("taskInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
-
-
-//create a span / new line for each task added
+  //create a span
   var span = document.createElement("span");
   span.className = "delBtn";
   span.innerHTML = "<i class='fas fa-minus'></i>";
@@ -20,14 +39,30 @@ function newElement() {
   }
   document.getElementById("taskInput").value = "";
 
+  // var span = document.createElement("SPAN");
+  // var txt = document.createTextNode("\u00D7");
+  // span.className = "close";
+  // span.appendChild(txt);
+  // li.appendChild(span);
 
-//Delete tasks permanentely from the list on pressing the minus button
+  // for (i = 0; i < close.length; i++) {
+  //   close[i].onclick = function() {
+  //     var div = this.parentElement;
+  //     div.style.display = "none";
+  //   }
+  // }
+
+};
+
+//Delete Tasks
 var task = document.querySelector("#taskUL");
 task.addEventListener("click", removeTask);
+
 function removeTask(e){
 if(e.target.parentElement.classList.contains('delBtn')){
-  if(confirm("Are you sure you want to delete this task?")){
+  if(confirm("Do you want to delete this task?")){
     e.target.parentElement.parentElement.remove();
   }
 }
 }
+
