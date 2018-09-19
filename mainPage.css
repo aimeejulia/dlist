@@ -40,11 +40,16 @@ Dark Slate: #1d1e22 */
   cursor: pointer;
 }
 
+.checkedBtn{
+  float: right;
+  cursor: pointer;
+}
+
 .list-item{
   padding-right: 23%;
 }
 
-.taskLI.completed {
+.taskCompleted {
   text-decoration: line-through;
 }
 
