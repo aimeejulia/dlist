@@ -43,6 +43,7 @@ Dark Slate: #1d1e22 */
 .checkedBtn{
   float: right;
   cursor: pointer;
+  padding-right: 7px;
 }
 
 .list-item{
