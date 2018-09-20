@@ -40,5 +40,5 @@ if(e.target.parentElement.classList.contains('delBtn')){
 
 //marks tasks as complete
 function toggleChecked (e) {
-  e.target.parentElement.parentElement.classList.add('taskCompleted')
+  e.target.parentElement.parentElement.classList.toggle('taskCompleted');
 }
