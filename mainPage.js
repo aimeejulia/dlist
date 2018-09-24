@@ -5,6 +5,7 @@ function newElement() {
   var inputValue = document.getElementById("taskInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+
   //create a span
   var delBtn = document.createElement("span");
   delBtn.className = "delBtn";
@@ -38,7 +39,16 @@ if(e.target.parentElement.classList.contains('delBtn')){
 }
 }
 
-//marks tasks as complete
+//marks tasks as complete and change color to gray
 function toggleChecked (e) {
   e.target.parentElement.parentElement.classList.toggle('taskCompleted');
 }
+
+// Add new todo with the enter key
+var input = document.querySelector("#taskInput");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.querySelector(".addBtn").click();
+    }
+});
