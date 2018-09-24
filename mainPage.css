@@ -52,6 +52,7 @@ Dark Slate: #1d1e22 */
 
 .taskCompleted {
   text-decoration: line-through;
+  background: gray;
 }
 
 /* keeping the footer at the bottom of the page*/
