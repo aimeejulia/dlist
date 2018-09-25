@@ -11,11 +11,13 @@ function newElement() {
   var inputValue = document.getElementById("taskInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+
 //create a span for delBtn
   var delBtn = document.createElement("span");
   delBtn.className = "delBtn";
   delBtn.innerHTML = "<i class='fas fa-minus'></i>";
   li.appendChild(delBtn);
+  
 //create a span for checkedBtn
   var checkedBtn = document.createElement("span");
   checkedBtn.className = "checkedBtn";
@@ -52,7 +54,19 @@ function toggleChecked (e) {
   e.target.parentElement.parentElement.classList.toggle('taskCompleted');
 }
 
+
 //saving tasks to localStorage
 function addToLocalStorage () {
   localStorage.setItem("key", "value");
 }
+
+=======
+// Add new todo with the enter key
+var input = document.querySelector("#taskInput");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.querySelector(".addBtn").click();
+    }
+});
+
