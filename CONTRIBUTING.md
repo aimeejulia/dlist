@@ -12,6 +12,7 @@ We encourage you to download the project and get familiar with the code and the 
 If you still need help leave us a message
 2. **Fork it!** We advise you to follow the [fork instructions on github](https://help.github.com/articles/fork-a-repo/)
 3. **Consider a git & github integrated text editor** [Atom](https://atom.io/) is an open source text editor with git and github integration that allows you to seemlessly do all the pushing and pulling from within the editor itself.
+4. **Join the github community** There is plenty of [help](https://github.community/) out there
 
 ## Reporting Issues
 
