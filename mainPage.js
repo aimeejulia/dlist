@@ -17,7 +17,7 @@ function newElement() {
   delBtn.className = "delBtn";
   delBtn.innerHTML = "<i class='fas fa-minus'></i>";
   li.appendChild(delBtn);
-  
+
 //create a span for checkedBtn
   var checkedBtn = document.createElement("span");
   checkedBtn.className = "checkedBtn";
@@ -60,7 +60,6 @@ function addToLocalStorage () {
   localStorage.setItem("key", "value");
 }
 
-=======
 // Add new todo with the enter key
 var input = document.querySelector("#taskInput");
 input.addEventListener("keyup", function(event) {
@@ -69,4 +68,3 @@ input.addEventListener("keyup", function(event) {
         document.querySelector(".addBtn").click();
     }
 });
-
