@@ -15,7 +15,7 @@ function newElement() {
 //create a span for delBtn
   var delBtn = document.createElement("span");
   delBtn.className = "delBtn";
-  delBtn.innerHTML = "<i class='fas fa-minus'></i>";
+  delBtn.innerHTML = "<i class='fas fa-trash'></i>";
   li.appendChild(delBtn);
 
 //create a span for checkedBtn
